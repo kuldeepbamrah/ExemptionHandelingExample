@@ -9,9 +9,17 @@ public class ExceptionHandling {
         int c;
         System.out.println("Start");
 
-        c=a/b;
-        System.out.println("C : " +c);
-        
+        try {
+
+            c = a / b;
+            System.out.println("C : " + c);
+
+        } catch (ArithmeticException  ae) {
+            System.out.println("Value of b = 0, Divisible by 0 error");
+        }
+
+        System.out.println("End");
     }
+
 
 }
