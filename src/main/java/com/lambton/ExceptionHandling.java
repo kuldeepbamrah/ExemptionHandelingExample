@@ -29,6 +29,9 @@ public class ExceptionHandling {
         catch (Exception ae) {
             System.out.println(ae.getMessage());
         }
+        finally {
+            System.out.println("I am in finally block");
+        }
 
         System.out.println("End");
     }
